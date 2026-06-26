@@ -1,37 +1,33 @@
 import logo from "./images/LogoBig.png";
-import profileImgCircle from "./images/Devon_circle.png";
-import JavaScriptL from "./images/Skills/JavaScriptL.png";
-import TypeScript from "./images/Skills/TypeScript.png";
-import Python from "./images/Skills/Python.png";
-import ReactL from "./images/Skills/React.png";
-import Next from "./images/Skills/Next.png";
-import Redux from "./images/Skills/Redux.png";
-import NodeJS from "./images/Skills/NodeJS.png";
-import Docker from "./images/Skills/Docker.png";
-import Jest from "./images/Skills/Jest.png";
-import Playwright from "./images/Skills/Playwright.png";
-import Tailwind from "./images/Skills/Tailwind.png";
-import Vite from "./images/Skills/Vite.png";
-import Remix from "./images/Skills/Remix.png";
-import Neovim from "./images/Skills/Neovim.png";
-import Electron from "./images/Skills/Electron.png";
+import profileImgCircle from "./images/Dhruv Panchagatti.png";
+
+// Hard Skills
+import Python from "./images/Skills/python.svg";
+import Cpp from "./images/Skills/C++.svg";
+import Java from "./images/Skills/java.svg";
+import Github from "./images/Skills/github.svg";
+import TensorFlow from "./images/Skills/tensorflow.svg";
+import Arduino from "./images/Skills/arduino.svg";
+import CircuitDesign from "./images/Skills/circuitdesign.png";
+import Onshape from "./images/Skills/onshape.png";
+
+// Currently Exploring
+import ESP32 from "./images/Skills/esp32.png";
+import Modtran from "./images/Skills/modtran.png";
+import Anthropic from "./images/Skills/anthopic.png";
 
 export {
-  ReactL,
-  Next,
-  Redux,
-  NodeJS,
-  JavaScriptL,
-  TypeScript,
-  Python,
-  Docker,
-  Jest,
-  Playwright,
-  Tailwind,
-  Vite,
   logo,
   profileImgCircle,
-  Remix,
-  Neovim,
-  Electron,
+  Python,
+  Cpp,
+  Java,
+  Github,
+  TensorFlow,
+  Arduino,
+  CircuitDesign,
+  Onshape,
+  ESP32,
+  Modtran,
+  Anthropic,
 };

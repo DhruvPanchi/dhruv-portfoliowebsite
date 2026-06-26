@@ -11,8 +11,8 @@ import type { Metadata } from "next";
 import Projects from "@/components/sections/Projects";
 
 export const metadata: Metadata = {
-  title: "Devon Gifford",
-  description: "Full-stack developer portfolio showcasing projects and experience.",
+  title: "Dhruv Panchagatti",
+  description: "Electrical engineer portfolio showcasing projects and experience.",
   icons: {
     icon: "/favicon.ico",
   },

@@ -5,8 +5,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Devon Gifford – Portfolio",
-  description: "Full-stack developer. Quality engineer. React enjoyer.",
+  title: "Dhruv Panchagatti – Portfolio",
+  description: "Electrical Engineer, Researcher, Entrepreneur",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

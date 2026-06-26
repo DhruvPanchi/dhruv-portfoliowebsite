@@ -10,14 +10,11 @@ export default function SocialIconList({ className }: { className?: string }) {
 
   return (
     <div className={`flex gap-4 ${className}`}>
-      <SocialIcon href="https://github.com/DevonGifford" externalClassName={baseClass}>
+      <SocialIcon href="https://github.com/dhruvpanchi" externalClassName={baseClass}>
         <SiGithub />
       </SocialIcon>
-      <SocialIcon href="https://www.linkedin.com/in/dbgifford/" externalClassName={baseClass}>
+      <SocialIcon href="https://www.linkedin.com/in/dhruv-panchi/" externalClassName={baseClass}>
         <BsLinkedin />
-      </SocialIcon>
-      <SocialIcon href="https://twitter.com/devon_the_dev" externalClassName={baseClass}>
-        <TiSocialTwitter />
       </SocialIcon>
     </div>
   );

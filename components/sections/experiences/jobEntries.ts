@@ -1,14 +1,11 @@
 import { ReactNode } from "react";
-// import { BsApple } from "react-icons/bs";
 
 export type JobTabKey =
-  | "tuvLead"
-  | "tuvFullstack"
-  | "appleTeamlead"
-  | "appleQA"
-  | "mashStartup"
-  | "cubeStartup"
-  | "freelance";
+  | "uciLab"
+  | "gptTrainer"
+  | "sciConnect"
+  | "discoveryCube"
+  | "steamForAll";
 
 export type JobEntry = {
   key: JobTabKey;
@@ -29,262 +26,186 @@ export type JobEntry = {
 
 const jobEntries: JobEntry[] = [
   {
-    key: "tuvLead",
-    label: "TÜV Rheinland",
-    sub: "Lead Frontend Developer",
+    key: "uciLab",
+    label: "UCI ICVL",
+    sub: "Hyperspectral Imaging Researcher",
     componentProps: {
-      title: "Lead Frontend Developer",
-      company: "TÜV Rheinland",
-      dates: "Jan 2025 - Present",
+      title: "Hyperspectral Imaging Researcher",
+      company: "UCI ICVL (Healey Lab)",
+      dates: "2025 - Present",
       intro:
-        "Leading the frontend strategy and architecture for multiple projects at TÜV Rheinland, with a focus on headless CMS integration, team scaling, and optimizing user interfaces for scalability and performance.",
+        "Researching hyperspectral imaging applications for early wildfire detection under Professor Glenn Healey at the UC Irvine Imaging and Computer Vision Lab, with a focus on the HySpex pixel analysis pipeline and MODTRAN atmospheric matching.",
       bullets: [
         {
-          heading: "Headless CMS Integration",
+          heading: "HySpex Pixel Analysis",
           content:
-            "Orchestrated the transition to a headless CMS using RESTful and GraphQL API's, enabling flexible content delivery and seamless integration with Next.js and React applications.",
+            "Perform VNIR/SWIR pixel selection, alignment, and spectrum extraction on hyperspectral imagery to identify atmospheric signatures relevant to wildfire detection.",
         },
         {
-          heading: "Team Leadership & Scaling",
+          heading: "MODTRAN Atmospheric Matching",
           content:
-            "Managed and scaled a frontend team of 10+ engineers, implementing Agile processes, conducting sprint planning, and mentoring developers to improve velocity and code quality.",
+            "Run MODTRAN-based atmospheric model fits against extracted pixel spectra and present matches to the lab PI for validation against an error threshold.",
         },
         {
-          heading: "CI/CD and DevOps Leadership",
+          heading: "Pipeline Automation",
           content:
-            "Led the integration of CI/CD pipelines using GitLab-CI and Docker, automating deployments to Azure Kubernetees Services & ensuring reliable delivery of features and bug fixes.",
+            "Designing and building an automated pipeline to scale the manual pixel-to-MODTRAN-fit workflow, dramatically reducing per-pixel analysis time and enabling larger batch runs.",
         },
         {
-          heading: "UI/UX Enhancements & Performance Optimization",
+          heading: "Cross-Sensor Correlation",
           content:
-            "Worked closely with UX/UI teams to ensure design consistency and implement performance optimizations (lazy loading, code splitting) for a faster, more responsive application.",
+            "Cross-reference VNIR and SWIR detector outputs against geo-referenced pixel locations to verify alignment and ensure consistent spectra across spectral bands.",
         },
         {
-          heading: "Cloud Infrastructure and API Management",
+          heading: "Research Documentation",
           content:
-            "Oversaw the integration of cloud-based infrastructure (AWS, Lambda) and API management, enabling real-time data fetching and improved content rendering with minimal latency.",
-        },
-      ],
-    },
-  },
-
-  {
-    key: "tuvFullstack",
-    label: "TÜV Rheinland",
-    sub: "Sr Fullstack Developer",
-    componentProps: {
-      title: "Senior Fullstack Developer",
-      company: "TÜV Rheinland",
-      dates: "June 2024 - Jan 2025",
-      intro:
-        "Drove the development of scalable, modern frontend and backend systems at TÜV Rheinland, enhancing architecture with cutting-edge technologies and ensuring long-term maintainability.",
-      bullets: [
-        {
-          heading: "Component Library Development",
-          content:
-            "Designed and developed a scalable component library using React, TypeScript, and Storybook, enabling reusability and reducing time to market across multiple teams.",
-        },
-        {
-          heading: "Tech Stack Optimization",
-          content:
-            "Optimized frontend performance by integrating modern frameworks (Next.js, TypeScript) and tools (Vite, Webpack) to improve build times and overall application efficiency.",
-        },
-        {
-          heading: "Cross-Functional Collaboration",
-          content:
-            "Collaborated closely with backend, UX, and QA teams to ensure seamless integration of APIs and automated testing pipelines (Jest, Cypress) for robust, scalable solutions.",
-        },
-        {
-          heading: "Code Quality and Maintainability",
-          content:
-            "Established and enforced best practices for code quality and maintainability, implementing ESLint, Prettier, and TypeScript for type safety and consistency across the codebase.",
-        },
-        {
-          heading: "Mentorship and Team Guidance",
-          content:
-            "Mentored junior developers, conducting regular code reviews and knowledge-sharing sessions to elevate team standards and foster a collaborative learning environment.",
+            "Document workflows, results, and presentation materials for the professor and lab, supporting reproducibility and outreach efforts for the ICVL group.",
         },
       ],
     },
   },
   {
-    key: "appleTeamlead",
-    label: "Apple",
-    sub: "Team-lead",
+    key: "gptTrainer",
+    label: "GPT-Trainer",
+    sub: "AI Intern",
     componentProps: {
-      title: "Team Lead",
-      company: "Apple (Cognizant)",
-      // companyIcon: <BsApple />,
-      dates: "June 2022 - Jan 2023",
+      title: "AI Intern",
+      company: "GPT-Trainer (Petal)",
+      dates: "2024 - 2025",
       intro:
-        "Promoted to Team Lead, managing multiple teams while continuing engineering duties. Focused on supporting managers, streamlining workflows, and guiding teams to meet project goals.",
+        "Interned at GPT-Trainer, a platform for building custom AI chatbots and agents on top of LLMs, contributing to prompt engineering, agent workflows, and product testing across real customer deployments.",
       bullets: [
         {
-          heading: "Strategic Manager Support",
+          heading: "Prompt Engineering",
           content:
-            "Collaborated closely with senior management to optimize daily operations, proactively addressing bottlenecks and ensuring seamless team coordination for mission-critical projects.",
+            "Designed and iterated on prompts for production chatbot deployments, improving response quality, consistency, and alignment with customer use cases.",
         },
         {
-          heading: "Cross-Team Task Coordination & Delivery",
+          heading: "Agent Workflow Design",
           content:
-            "Coordinated complex tasks across multiple teams, ensuring timely, high-quality delivery of milestones while adhering to Apple’s strategic goals and standards.",
+            "Built and tested multi-step agent workflows using GPT-Trainer's no-code platform, enabling chatbots to handle complex customer queries through tool use and chaining.",
         },
         {
-          heading: "Team Leadership & Performance Optimization",
+          heading: "Model Evaluation",
           content:
-            "Provided dynamic leadership and mentorship to engineers, delivering regular performance feedback, and fostering a culture of continuous improvement and high accountability.",
+            "Evaluated chatbot performance against real conversation samples, identifying failure modes and recommending prompt or workflow adjustments to improve reliability.",
         },
         {
-          heading: "Executive Reporting & Decision-Making",
+          heading: "Product Testing & Feedback",
           content:
-            "Delivered detailed progress reports to upper management, highlighting risks, achievements, and mitigation strategies, enabling data-driven decision-making at the executive level.",
+            "Stress-tested new platform features pre-release, surfacing bugs and UX issues to the engineering team and contributing to faster, cleaner releases.",
         },
         {
-          heading: "Onboarding & Talent Development",
+          heading: "Customer-Facing Documentation",
           content:
-            "Facilitated the onboarding of new team members, while providing constructive feedback and professional development opportunities to support team performance & engagement.",
+            "Helped write user-facing documentation and example workflows to onboard non-technical users to the platform's agent-building capabilities.",
         },
       ],
     },
   },
   {
-    key: "appleQA",
-    label: "Apple",
-    sub: "QA Engineer",
+    key: "sciConnect",
+    label: "SciConnect",
+    sub: "Co-founder",
     componentProps: {
-      title: "Quality Engineer",
-      company: "Apple (Cognizant)",
-      // companyIcon: <BsApple />,
-      dates: "September 2021 - Jan 2023",
+      title: "Co-founder",
+      company: "SciConnect (501c3 Nonprofit)",
+      dates: "2022 - Present",
       intro:
-        "Full-time in a high-security, lockdown environment at Apple, I worked on a widely recognized AI virtual assistant, implementing advanced automation testing and NLP processing to optimize performance and scalability.",
+        "Co-founded SciConnect, a nonprofit providing free Science Olympiad tutoring to middle and high school students nationwide. Grew the organization to reach 11,000+ students across 36+ states through volunteer tutors and free online resources.",
       bullets: [
         {
-          heading: "Automation Engineering",
+          heading: "Organization Building",
           content:
-            "Designed and maintained automation frameworks in Python and Swift, optimizing NLP workflows for millions of users and ensuring scalable test automation.",
+            "Built SciConnect from a small local initiative into a national nonprofit, structuring tutor recruitment, content review, and student matchmaking processes for scale.",
         },
         {
-          heading: "System Validation",
+          heading: "Volunteer Tutor Network",
           content:
-            "Led end-to-end testing, validating AI integration across cloud-based services, edge devices, and third-party APIs while maintaining high availability and fault tolerance.",
+            "Recruited and managed a network of high-school and college-level volunteer tutors, training them to lead free sessions across the full Science Olympiad event lineup.",
         },
         {
-          heading: "Defect Management",
+          heading: "Nationwide Outreach",
           content:
-            "Identified, triaged, and documented critical bugs, collaborating with cross-functional teams to resolve issues and enhance platform stability & user experience at scale.",
+            "Expanded reach to 11,000+ students across 36+ U.S. states through partnerships with schools, Science Olympiad chapters, and online communities.",
         },
         {
-          heading: "Version Control & CI/CD",
+          heading: "Curriculum & Resource Development",
           content:
-            "Managed complex Git & GitHub workflows in multi-CI/CD pipeline environment, enabling agile development cycles, ensuring rapid and reliable deployments, and version control practices",
+            "Oversaw the creation of free study guides, practice tests, and tutoring curricula across multiple Science Olympiad events, making competitive science prep accessible to underserved students.",
         },
         {
-          heading: "Product Lifecycle Testing",
+          heading: "Operations & Strategy",
           content:
-            "Led testing efforts for AI products, employing methodologies like unit, integration, smoke, pent, regression, and performance testing to ensure seamless production deployment.",
+            "Manage day-to-day operations including scheduling, communications, and event coordination, while setting longer-term strategy for nonprofit growth and impact.",
         },
       ],
     },
   },
   {
-    key: "mashStartup",
-    label: "Mashauri Limited",
-    sub: "Frontend Developer",
+    key: "discoveryCube",
+    label: "Discovery Cube",
+    sub: "STEM Volunteer",
     componentProps: {
-      title: "Frontend Developer",
-      company: "Mashauri Limited",
-      dates: "June 2019 - February 2020",
+      title: "STEM Education Volunteer",
+      company: "Discovery Cube Orange County",
+      dates: "2023 - Present",
       intro:
-        "As a Frontend Developer at Mashauri Limited, I contributed to the UI/UX design support for an EdTech startup, designing wireframes and developing landing pages and user forms using JavaScript and React.",
+        "Volunteered at Discovery Cube OC, one of Southern California's leading science museums, helping run hands-on STEM exhibits and engaging young visitors with interactive science demonstrations.",
       bullets: [
         {
-          heading: "Database Migration & Optimization",
+          heading: "Hands-On Exhibit Support",
           content:
-            "Managed the migration of legacy databases to more efficient, scalable PostgreSQL solutions, ensuring data integrity and optimizing queries for performance across the platform.",
+            "Guided museum visitors through interactive STEM exhibits, explaining underlying scientific concepts at age-appropriate levels for kids, families, and school groups.",
         },
         {
-          heading: "Content Management & Site Administration",
+          heading: "Live Demonstrations",
           content:
-            "Managed content updates and integrations on WordPress and Drupal, ensuring SEO optimization and efficient content workflows for smooth platform operation.",
+            "Ran live science demonstrations, including physics, chemistry, and engineering experiments, helping spark curiosity in young learners through accessible, engaging content.",
         },
         {
-          heading: "Frontend Development & UI Optimization",
+          heading: "Visitor Engagement",
           content:
-            "Developed responsive, dynamic user interfaces using React and JavaScript, ensuring a seamless experience for students and educators across web and mobile platforms.",
+            "Built rapport with visitors of all ages, answering questions and tailoring explanations to ensure every guest left with at least one new concept or insight.",
         },
         {
-          heading: "Cross-Functional Collaboration & Problem Solving",
+          heading: "Special Event Support",
           content:
-            "Collaborated with backend and design teams to troubleshoot and resolve issues related to CMS, frontend, and database integrations, ensuring timely delivery of new features.",
+            "Supported special STEM events, summer camps, and school field trips, helping coordinate logistics and ensuring smooth operations across high-traffic days.",
         },
       ],
     },
   },
   {
-    key: "cubeStartup",
-    label: "Out-of-the-Cube",
-    sub: "Jr Frontend Developer",
+    key: "steamForAll",
+    label: "STEAM for All",
+    sub: "Volunteer",
     componentProps: {
-      title: "Jr Frontend Developer",
-      company: "Out-of-the-Cube",
-      dates: "October 2018 - June 2019",
+      title: "Volunteer",
+      company: "STEAM for All",
+      dates: "2022 - Present",
       intro:
-        "In my role supporting the growth of an art auction start-up, I utilized HTML/CSS, JavaScript/jQuery, and a content management system (CMS) to enhance the websites functionality and user experience.",
+        "Volunteered with STEAM for All, an initiative bringing free science, technology, engineering, arts, and math education to underserved students, helping expand access to high-quality STEAM learning experiences.",
       bullets: [
         {
-          heading: "HTML/CSS and JavaScript",
+          heading: "STEAM Workshops",
           content:
-            "Developed dynamic, visually appealing portfolio websites for artists, showcasing their unique style and artwork using HTML, CSS, and JavaScript/jQuery.",
+            "Led and assisted with STEAM workshops for K-12 students, covering topics across robotics, coding, engineering, and applied science.",
         },
         {
-          heading: "Content Management with WordPress",
+          heading: "Curriculum Support",
           content:
-            "Managed and integrated new pages, articles, and multimedia using WordPress, ensuring a seamless user experience with customized styling through the Theme Editor.",
+            "Helped develop and refine workshop curricula to make complex STEAM concepts accessible, engaging, and hands-on for students from a range of backgrounds.",
         },
         {
-          heading: "Website UI/UX Enhancements",
+          heading: "Outreach to Underserved Communities",
           content:
-            "I refined the website's aesthetics and usability with CSS and UI enhancements while implementing dynamic JavaScript/jQuery features for enhanced user experience.",
+            "Supported outreach efforts to schools and community centers in underserved areas, helping expand the reach of free STEAM programming.",
         },
         {
-          heading: "Product Management Support",
+          heading: "Event Coordination",
           content:
-            "Assisted in product management, adding new products and converting an Excel database to PostgreSQL to streamline data management processes.",
-        },
-      ],
-    },
-  },
-  {
-    key: "freelance",
-    label: "Freelance",
-    sub: "Wordpress Developer",
-    componentProps: {
-      title: "WordPress Developer",
-      company: "Freelance",
-      dates: "2015 - January 2019",
-      intro:
-        "As a freelance WordPress developer, I specialized in crafting responsive, user-friendly websites for small to medium-sized enterprises (SMEs) in the hospitality industry, focusing on theme customization, plugin integration, and tailored solutions. Key accomplishments include:",
-      bullets: [
-        {
-          heading: "Customization & Feature Implementation",
-          content:
-            "Tailored themes and integrated plugins to optimize site performance, ensuring responsive design for seamless navigation across devices.",
-        },
-        {
-          heading: "E-commerce Integration",
-          content:
-            "Set up e-commerce functionality, including payment gateways and product catalog management.",
-        },
-        {
-          heading: "Branding & Design Alignment",
-          content:
-            "Customized themes to align with clients' branding, ensuring a cohesive and visually appealing web presence.",
-        },
-        {
-          heading: "Project Management & Ongoing Maintenance",
-          content:
-            "Managed multiple projects, meeting deadlines while providing regular updates, bug fixes, and client training on website management.",
+            "Assisted with logistics, materials prep, and on-site management for STEAM for All events and workshops throughout the year.",
         },
       ],
     },

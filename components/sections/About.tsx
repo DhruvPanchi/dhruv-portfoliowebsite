@@ -4,21 +4,17 @@ import React from "react";
 import Image from "next/image";
 import {
   profileImgCircle,
-  ReactL,
-  Next,
-  Redux,
-  JavaScriptL,
-  TypeScript,
   Python,
-  Docker,
-  NodeJS,
-  Jest,
-  Playwright,
-  Tailwind,
-  Vite,
-  Remix,
-  Neovim,
-  Electron,
+  Cpp,
+  Java,
+  Github,
+  TensorFlow,
+  Arduino,
+  CircuitDesign,
+  Onshape,
+  ESP32,
+  Modtran,
+  Anthropic,
 } from "@/public/assets";
 import SectionTitle from "../common/SectionTitle";
 
@@ -49,37 +45,32 @@ const skillGroups = [
   {
     title: "Hard Skills",
     skills: [
-      { src: TypeScript, alt: "TypeScript", title: "TypeScript" },
-      {
-        src: JavaScriptL,
-        alt: "JavaScript",
-        title: "JavaScript",
-        className: "rounded-full w-12 max-md:w-6",
-      },
-
-      { src: ReactL, alt: "React", title: "React", className: "w-14 max-md:w-7" },
-      { src: Next, alt: "NextJS", title: "NextJS" },
-      { src: Vite, alt: "Vite", title: "Vite", className: "w-14 max-md:w-6" },
-      { src: Jest, alt: "Jest", title: "Jest", className: "w-10 max-md:w-6 rounded-none" },
-      {
-        src: Playwright,
-        alt: "PlayWright",
-        title: "PlayWright",
-        className: "w-16 md:translate-x-1 max-md:w-6",
-      },
-      { src: Tailwind, alt: "Tailwind", title: "Tailwind", className: "w-12 max-md:w-8" },
-      { src: Docker, alt: "Docker", title: "Docker", className: "w-16 max-md:w-8" },
-      { src: Redux, alt: "Redux", title: "Redux", className: "w-10 max-md:w-6 rounded-none" },
-      { src: NodeJS, alt: "NodeJS", title: "NodeJS", className: "w-14 max-md:w-6" },
       { src: Python, alt: "Python", title: "Python", className: "w-14 max-md:w-7" },
+      { src: Cpp, alt: "C++", title: "C/C++", className: "w-12 max-md:w-6" },
+      { src: Java, alt: "Java", title: "Java", className: "w-12 max-md:w-6" },
+      { src: Github, alt: "GitHub", title: "GitHub", className: "w-12 max-md:w-6 rounded-full" },
+      { src: TensorFlow, alt: "TensorFlow", title: "TensorFlow", className: "w-12 max-md:w-6" },
+      { src: Arduino, alt: "Arduino", title: "Arduino", className: "w-14 max-md:w-7" },
+      {
+        src: CircuitDesign,
+        alt: "Circuit Design",
+        title: "Circuit Design",
+        className: "w-12 max-md:w-6",
+      },
+      { src: Onshape, alt: "Onshape", title: "Onshape", className: "w-12 max-md:w-6" },
     ],
   },
   {
     title: "Currently Exploring",
     skills: [
-      { src: Remix, alt: "Remix", title: "Remix", className: "w-14 max-md:w-6" },
-      { src: Neovim, alt: "Neovim", title: "Neovim", className: "w-14 max-md:w-6" },
-      { src: Electron, alt: "Electron", title: "Electron", className: "w-14 max-md:w-6" },
+      { src: ESP32, alt: "ESP32", title: "ESP32", className: "w-14 max-md:w-7" },
+      { src: Modtran, alt: "MODTRAN", title: "MODTRAN", className: "w-12 max-md:w-6" },
+      {
+        src: Anthropic,
+        alt: "Anthropic API",
+        title: "Anthropic API",
+        className: "w-12 max-md:w-6",
+      },
     ],
   },
 ];
@@ -110,24 +101,25 @@ const About = () => {
               </div>
             </div>
             <p>
-              Hello there, I&apos;m a <span className="text-textGreen">fullstack developer</span>.
-              Originally from South Africa, holding British citizenship and now currently based in
-              Madrid, Spain.
+              Hello there, I&apos;m a <span className="text-textGreen">student</span> based in
+              Irvine, California.
               <br />
-              <br />I have <span className="text-textGreen">7+ years </span> of experience in the
-              tech industry, including stints at various startups. I specialize in developing
-              responsive and accessible web applications using{" "}
-              <span className="text-textGreen">JavaScript & React</span>.
+              <br />I have <span className="text-textGreen">4+ years </span> of experience in the
+              engineering industry, including stints at various startups, labs, and companies.
               <br />
               <br />
               Recently, I had the incredible opportunity to join a{" "}
-              <span className="text-textGreen">leading FAANG</span> company as a Quality Engineer,
-              and later advanced to the role of Team Lead. Immersing myself in big-tech best
-              practices, with a specific focus on{" "}
-              <span className="text-textGreen">E2E & integration testing.</span>
+              <span className="text-textGreen">research lab</span> as a researcher and analyst of
+              Hyperspectral data. Immersing myself in research practices, with a specific focus on{" "}
+              <span className="text-textGreen">
+                early wildfire detection and image pixel analysis.
+              </span>
               <br />
               <br />
-              <em>Currently leading a team and project rewriting a large-scale legacy system.</em>
+              <em>
+                Currently working with Professor Healey and the ICVL group to increase outreach and
+                funding.
+              </em>
               <br />
               <br />
             </p>
@@ -140,7 +132,7 @@ const About = () => {
             <Image
               className="fill absolute z-30 h-52 w-52 rounded-full border-2 border-textGreen object-cover lgl:h-80 lgl:w-80"
               src={profileImgCircle}
-              alt="Devon Gifford - Profile picture"
+              alt="Dhruv Panchagatti - Profile picture"
             />
             <div className="absolute left-0 top-0 z-30 hidden h-52 w-52 rounded-full bg-textGreen/20 duration-300 group-hover:bg-transparent mdl:inline-block lgl:h-80 lgl:w-80" />
             <div className="absolute left-6 top-6 z-10 hidden h-52 w-52 rounded-full border-2 border-textGreen transition-transform duration-100 group-hover:-translate-x-6 group-hover:-translate-y-6 mdl:inline-block lgl:h-80 lgl:w-80" />

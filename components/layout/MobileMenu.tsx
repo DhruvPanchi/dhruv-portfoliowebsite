@@ -81,13 +81,13 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(({ onClose }, ref) => {
 
         {/* Email */}
         <motion.a
-          href="mailto:devongifford@outlook.com"
+          href="mailto:dhruv.panchi@gmail.com"
           initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.2, delay: 1.6 }}
         >
           <p className="mt-4 w-72 pl-4 text-sm tracking-widest hover:text-textGreen">
-            devongifford@outlook.com
+            dhruv.panchi@gmail.com
           </p>
         </motion.a>
       </motion.div>

@@ -17,23 +17,18 @@ const LeftSide = () => {
         className="flex flex-col gap-4"
       >
         <SocialIcon
-          href="https://github.com/DevonGifford"
+          href="https://github.com/dhruvpanchi"
           externalClassName="bg-hoverColor text-textLight"
         >
           <SiGithub />
         </SocialIcon>
         <SocialIcon
-          href="https://www.linkedin.com/in/dbgifford/"
+          href="https://www.linkedin.com/in/dhruv-panchi/"
           externalClassName="bg-hoverColor text-textLight"
         >
           <BsLinkedin />
         </SocialIcon>
-        <SocialIcon
-          href="https://twitter.com/devon_the_dev"
-          externalClassName="bg-hoverColor text-textLight"
-        >
-          <TiSocialTwitter />
-        </SocialIcon>
+
       </motion.div>
       <div className="h-32 w-[2px] bg-textDark"></div>
     </div>

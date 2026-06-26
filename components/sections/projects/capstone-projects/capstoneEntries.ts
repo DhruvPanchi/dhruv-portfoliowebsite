@@ -1,13 +1,8 @@
 import { StaticImageData } from "next/image";
 
-import flatmateFinderBig from "@/public/assets/images/ProjectPictures/big-images/FlatmateFinder_big.png";
-import clearScoreBig from "@/public/assets/images/ProjectPictures/big-images/ClearScore_big.png";
-import thymiaBig from "@/public/assets/images/ProjectPictures/big-images/Thymia_big.png";
-import devReadyBig from "@/public/assets/images/ProjectPictures/big-images/DevReady_big.png";
-// import devReadySmall from "@/public/assets/images/ProjectPictures/small-images/devready_small.png";
-// import thymiaSmall from "@/public/assets/images/ProjectPictures/small-images/thymia_small.png";
-// import flatmateFinderSmall from "@/public/assets/images/ProjectPictures/small-images/flatmate_small.png";
-// import clearScoreSmall from "@/public/assets/images/ProjectPictures/small-images/clearscore_small.png";
+import voiceVehicleBig from "@/public/assets/images/ProjectPictures/big-images/VoiceVehicle_big.png";
+import candidBig from "@/public/assets/images/ProjectPictures/big-images/Candid_big.svg";
+import sciConnectBig from "@/public/assets/images/ProjectPictures/big-images/SciConnect_big.png";
 
 export type ProjectLayout = "default" | "reversed";
 
@@ -30,71 +25,54 @@ export type CapstoneEntry = {
 
 const capstoneEntries: CapstoneEntry[] = [
   {
-    title: "Flatmate Finder",
+    title: "Voice-Controlled Vehicle",
     description:
-      "A real world personal project designed to streamline the search for a flatmate. Through a simple form, applicants submit their details, allowing existing tenants to review them in a Tinder style swipe interface",
+      "A machine learning pipeline enabling reliable voice-controlled navigation for a robotic system, with applications in assistive technology. Built a custom dataset of voice commands, designed a two-stage CNN architecture with spectrogram (STFT) feature extraction, and integrated the model into a real-time robotic control system. Published in the Scholarly Review Journal.",
     image: {
-      src: flatmateFinderBig,
-      alt: "Flatmate Finder Project Image",
+      src: voiceVehicleBig,
+      alt: "Voice-Controlled Vehicle Project Image",
       width: 500,
       height: 300,
     },
-    imageUrl: "/assets/images/ProjectPictures/small-images/flatmate_small.png", // Use string path here
-    gitLink: "https://github.com/DevonGifford/FlatmateFinder",
-    liveLink: "https://flatmate-finder.vercel.app/",
-    techStackList: ["Vite", "TypeScript", "ShadCN", "Firebase", "Vitest"],
+    imageUrl: "/assets/images/ProjectPictures/big-images/VoiceVehicle_big.png",
+    gitLink:
+      "https://www.scholarlyreview.org/article/158298-voice-controlled-vehicle-determining-the-best-machine-learning-models-for-voice-recognition",
+    liveLink:
+      "https://www.scholarlyreview.org/article/158298-voice-controlled-vehicle-determining-the-best-machine-learning-models-for-voice-recognition",
+    techStackList: ["Python", "TensorFlow", "CNN", "STFT", "Arduino"],
     layout: "default",
   },
   {
-    title: "ClearScore Ideaboard",
+    title: "Candid",
     description:
-      "A time-constrained frontend assessment for ClearScore. Developed within 6 to 8 hours, it utilizes modern technologies like Tailwind CSS and ShadCN UI Library for rapid development. Prioritized simplicity, accessibility, and thorough testing.",
+      "An AI-powered civic engagement platform built to improve how residents interact with local governments. Designed a chatbot system that answers natural-language questions about city policies, services, and initiatives. Implemented a full-stack web app, integrated LLMs for context-aware responses, and engineered backend workflows for data ingestion and prompt structuring — with active outreach to local government stakeholders for pilot adoption.",
     image: {
-      src: clearScoreBig,
-      alt: "ClearScore Ideaboard Project Image",
+      src: candidBig,
+      alt: "Candid Project Image",
       width: 500,
       height: 300,
     },
-    imageUrl: "/assets/images/ProjectPictures/small-images/clearscore_small.png", // Use string path here
-    gitLink: "https://github.com/DevonGifford/ClearScore",
-    liveLink: "https://idea-board-murex.vercel.app/",
-    // youtubeLink: "https://idea-board-murex.vercel.app/",
-    techStackList: ["PostgreSQL", "Supabase", "TypeScript", "Tailwind"],
+    imageUrl: "/assets/images/ProjectPictures/big-images/Candid_big.svg",
+    gitLink: "",
+    liveLink: "",
+    techStackList: ["Next.js", "Tailwind", "LLMs", "RAG", "TypeScript"],
     layout: "reversed",
   },
   {
-    title: "Thymia 2-back game",
+    title: "SciConnect",
     description:
-      "A gamified version of the 2-back task, a cognitive test designed to measure working memory. Users are presented with a sequence of letters and must determine if the current letter matches the one presented two trials before.",
+      "Co-founded SciConnect, a 501(c)(3) nonprofit providing free Science Olympiad tutoring to middle and high school students nationwide. Grew the organization to reach 11,000+ students across 36+ states through a network of volunteer tutors, free study guides, and curriculum spanning the full Science Olympiad event lineup — making competitive science prep accessible to underserved students.",
     image: {
-      src: thymiaBig,
-      alt: "Thymia 2-back Game Project Image",
+      src: sciConnectBig,
+      alt: "SciConnect Project Image",
       width: 500,
       height: 300,
     },
-    imageUrl: "/assets/images/ProjectPictures/small-images/thymia_small.png", // Use string path here
-    gitLink: "https://github.com/DevonGifford/Thymia",
-    liveLink: "https://n-game-technical-assignment.vercel.app/",
-    // youtubeLink: "https://n-game-technical-assignment.vercel.app/",
-    techStackList: ["Next14", "Event-Logger", "Tailwind", "TypeScript", "Jest"],
+    imageUrl: "/assets/images/ProjectPictures/big-images/SciConnect_big.png",
+    gitLink: "https://www.sciconnect.org/",
+    liveLink: "https://www.sciconnect.org/",
+    techStackList: ["Nonprofit", "Education", "Outreach", "Curriculum"],
     layout: "default",
-  },
-  {
-    title: "Dev Ready",
-    description:
-      "An open source fullstack initiative, inspired by ZTM, designed to create an engaging interactive quiz platform for students. The project aims to empower learning through gamification and dynamic features.",
-    image: {
-      src: devReadyBig,
-      alt: "Dev Ready Project Image",
-      width: 500,
-      height: 300,
-    },
-    imageUrl: "/assets/images/ProjectPictures/small-images/devready_small.png", // Use string path here
-    gitLink: "https://github.com/DevonGifford/DevReady",
-    liveLink: "https://ztm-ready-portfolio-project.vercel.app/",
-    // youtubeLink: "https://ztm-ready-portfolio-project.vercel.app/",
-    techStackList: ["Next14", "TypeScript", "Tailwind", "Jest", "PlayWright"],
-    layout: "reversed",
   },
 ];
 
