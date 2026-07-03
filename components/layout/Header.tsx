@@ -1,9 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { logo } from "@/public/assets";
 import NavLinkList from "@/components/common/NavLinkList";
 import MobileMenu from "@/components/layout/MobileMenu";
 
@@ -33,19 +31,18 @@ export default function Header() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <a href="#home" className="hover:animate-spin">
-            <Image
-              src={logo}
-              alt="logo"
-              className="mt-2 w-10 rounded-full hover:animate-spin sml:w-12"
-            />
+          <a
+            href="#home"
+            className="group mt-2 flex h-10 w-10 items-center justify-center rounded-md border-2 border-textGreen font-titleFont text-lg font-bold text-textGreen duration-300 hover:bg-textGreen/10 sml:h-12 sml:w-12 sml:text-xl"
+          >
+            DP
           </a>
         </motion.div>
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-7 mdl:inline-flex">
           <NavLinkList onClick={handleScroll} />
-          <a href="/assets/Dhruv-Resume.pdf" target="_blank">
+          <a href="/assets/Dhruv_Resume.pdf" target="_blank">
             <motion.button
               initial={{ y: -10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
