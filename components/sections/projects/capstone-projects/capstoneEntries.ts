@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 
 import voiceVehicleBig from "@/public/assets/images/ProjectPictures/big-images/VoiceVehicle_big.png";
 import candidBig from "@/public/assets/images/ProjectPictures/big-images/Candid_big.svg";
-import sciConnectBig from "@/public/assets/images/ProjectPictures/big-images/SciConnect_big.png";
+import electricVehicleBig from "@/public/assets/images/ProjectPictures/big-images/ElectricVehicle_big.png";
 
 export type ProjectLayout = "default" | "reversed";
 
@@ -59,19 +59,26 @@ const capstoneEntries: CapstoneEntry[] = [
     layout: "reversed",
   },
   {
-    title: "SciConnect",
+    title: "Electric Vehicle — Autonomous Distance-Control System",
     description:
-      "Co-founded SciConnect, a 501(c)(3) nonprofit providing free Science Olympiad tutoring to middle and high school students nationwide. Grew the organization to reach 11,000+ students across 36+ states through a network of volunteer tutors, free study guides, and curriculum spanning the full Science Olympiad event lineup — making competitive science prep accessible to underserved students.",
+      "Designed and built a battery-powered vehicle from scratch, placing 1st out of ~50 teams at the Science Olympiad National Tournament. Implemented closed-loop distance control on an Arduino using a rotary encoder for wheel-revolution counting, stopping the vehicle within 4mm of the operator-set target across variable distances. Drove a 600 RPM DC motor through a motor driver with PWM ramping, tuning the acceleration and braking profile to trade top speed against overshoot. Built an LCD and rotary-encoder input interface for run-to-run target entry, with a rifle-scope mount for repeatable start-line alignment.",
     image: {
-      src: sciConnectBig,
-      alt: "SciConnect Project Image",
+      src: electricVehicleBig,
+      alt: "Electric Vehicle Autonomous Distance-Control System Project Image",
       width: 500,
       height: 300,
     },
-    imageUrl: "/assets/images/ProjectPictures/big-images/SciConnect_big.png",
-    gitLink: "https://www.sciconnect.org/",
-    liveLink: "https://www.sciconnect.org/",
-    techStackList: ["Nonprofit", "Education", "Outreach", "Curriculum"],
+    imageUrl: "/assets/images/ProjectPictures/big-images/ElectricVehicle_big.png",
+    gitLink: "",
+    liveLink: "",
+    techStackList: [
+      "Arduino",
+      "Embedded C++",
+      "Rotary Encoder Feedback",
+      "I2C LCD",
+      "PWM Motor Control",
+      "Closed-Loop Control",
+    ],
     layout: "default",
   },
 ];

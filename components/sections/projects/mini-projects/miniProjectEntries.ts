@@ -8,12 +8,12 @@ export type MiniProjectEntry = {
 
 const miniProjectsEntries: MiniProjectEntry[] = [
   {
-    title: "Spectra",
+    title: "SciConnect",
     description:
-      "An AI agent helping local OC businesses automatically follow up on missed calls, collect Google reviews, and answer customer questions 24/7 — so they never lose a lead while running their business.",
-    gitLink: "https://spectra-oc-ai.lovable.app/",
-    liveLink: "https://spectra-oc-ai.lovable.app/",
-    listItems: ["AI Agent", "LLMs", "Automation", "Small Business"],
+      "Co-founded SciConnect, a 501(c)(3) nonprofit providing free Science Olympiad tutoring to middle and high school students nationwide. Grew the organization to reach 11,000+ students across 36+ states through a network of volunteer tutors and free curriculum resources.",
+    gitLink: "https://www.sciconnect.org/",
+    liveLink: "https://www.sciconnect.org/",
+    listItems: ["Nonprofit", "Education", "Outreach", "Curriculum"],
   },
   {
     title: "ML in Soccer",
