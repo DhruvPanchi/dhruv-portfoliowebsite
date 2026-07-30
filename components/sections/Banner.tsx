@@ -41,8 +41,8 @@ const Banner: React.FC = () => {
             words={[
               "Electrical Engineering Student",
               "AI/ML Engineeer",
-              "UCI '29",
-              "BUilding AI Agents",
+              "UCI '30",
+              "Building AI Agents",
               "Hyperspectral Imaging Researcher",
               "AI Intern",
               "Entrepreneur",
