@@ -3,6 +3,7 @@ import { StaticImageData } from "next/image";
 import voiceVehicleBig from "@/public/assets/images/ProjectPictures/big-images/VoiceVehicle_big.png";
 import candidBig from "@/public/assets/images/ProjectPictures/big-images/Candid_big.svg";
 import electricVehicleBig from "@/public/assets/images/ProjectPictures/big-images/ElectricVehicle_big.png";
+import coherentBig from "@/public/assets/images/ProjectPictures/big-images/Coherent_big.svg";
 
 export type ProjectLayout = "default" | "reversed";
 
@@ -24,6 +25,22 @@ export type CapstoneEntry = {
 };
 
 const capstoneEntries: CapstoneEntry[] = [
+  {
+    title: "Coherent",
+    description:
+      "A hardware-accelerated arbitrage detection engine for prediction markets. Building the RTL/hardware side of a joint project that identifies deterministic, logically-guaranteed arbitrage across related prediction-market contracts, rather than predicting outcomes. Designing and exhaustively verifying SystemVerilog modules (complement detection, multi-outcome partition detection, depth sizing, edge calculation) against an independent C++ reference model across the full price space. Currently extending the architecture toward a generic streaming engine.",
+    image: {
+      src: coherentBig,
+      alt: "Coherent Project Image",
+      width: 500,
+      height: 300,
+    },
+    imageUrl: "/assets/images/ProjectPictures/big-images/Coherent_big.svg",
+    gitLink: "",
+    liveLink: "",
+    techStackList: ["SystemVerilog", "Verilator", "C++", "RTL Design", "Hardware Verification"],
+    layout: "default",
+  },
   {
     title: "Voice-Controlled Vehicle",
     description:

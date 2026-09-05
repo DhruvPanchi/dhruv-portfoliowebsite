@@ -1,0 +1,35 @@
+<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="300" fill="#0a192f"/>
+  <rect width="500" height="300" fill="#112240" opacity="0.6"/>
+
+  <!-- circuit grid motif -->
+  <g stroke="#64ffda" stroke-opacity="0.18" stroke-width="1">
+    <line x1="40" y1="0" x2="40" y2="300"/>
+    <line x1="460" y1="0" x2="460" y2="300"/>
+    <line x1="0" y1="60" x2="500" y2="60"/>
+    <line x1="0" y1="240" x2="500" y2="240"/>
+  </g>
+
+  <!-- arbitrage / market waveform -->
+  <polyline points="60,190 110,150 150,170 190,110 230,140 270,90 310,120 350,70 390,100 440,60"
+    fill="none" stroke="#64ffda" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#64ffda">
+    <circle cx="150" cy="170" r="4"/>
+    <circle cx="230" cy="140" r="4"/>
+    <circle cx="310" cy="120" r="4"/>
+    <circle cx="390" cy="100" r="4"/>
+  </g>
+
+  <!-- RTL block motif -->
+  <g stroke="#64ffda" stroke-width="1.5" fill="none" opacity="0.6">
+    <rect x="205" y="205" width="90" height="40" rx="4"/>
+    <line x1="250" y1="245" x2="250" y2="260"/>
+    <line x1="220" y1="205" x2="220" y2="190"/>
+    <line x1="280" y1="205" x2="280" y2="190"/>
+  </g>
+
+  <text x="250" y="228" text-anchor="middle" font-family="monospace" font-size="12" fill="#64ffda">edge_calc.sv</text>
+
+  <text x="250" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#ccd6f6">Coherent</text>
+  <text x="250" y="270" text-anchor="middle" font-family="monospace" font-size="13" letter-spacing="2" fill="#64ffda">IN PROGRESS</text>
+</svg>

@@ -15,6 +15,7 @@ import {
   ESP32,
   Modtran,
   Anthropic,
+  Verilog,
 } from "@/public/assets";
 import SectionTitle from "../common/SectionTitle";
 
@@ -71,6 +72,12 @@ const skillGroups = [
         title: "Anthropic API",
         className: "w-12 max-md:w-6",
       },
+      {
+        src: Verilog,
+        alt: "Verilog / SystemVerilog",
+        title: "Verilog / SystemVerilog",
+        className: "w-12 max-md:w-6 rounded-md",
+      },
     ],
   },
 ];
@@ -103,6 +110,16 @@ const About = () => {
             <p>
               Hello there, I&apos;m a <span className="text-textGreen">student</span> based in
               Irvine, California.
+              <br />
+              <br />
+              Electrical engineering student at{" "}
+              <span className="text-textGreen">UC Irvine (Class of 2030)</span>, aspiring to
+              combine engineering technicality and business-side entrepreneurship. I specialize
+              in{" "}
+              <span className="text-textGreen">
+                machine learning algorithms, hyperspectral processing research, and low-latency
+                digital hardware design.
+              </span>
               <br />
               <br />I have <span className="text-textGreen">4+ years </span> of experience in the
               engineering industry, including stints at various startups, labs, and companies.

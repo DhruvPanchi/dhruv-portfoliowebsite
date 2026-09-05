@@ -59,8 +59,9 @@ const Banner: React.FC = () => {
         className="flex flex-col gap-1.5 text-sm font-medium text-textDark sml:text-base"
       >
         <p>
-          Electrical engineering student aspiring to combine engineering technicality and business-side entrepreneurship. I specialize in
-          machine learning algorithms, leveraging AI in business, and hyperspectral processing research.
+          Electrical engineering student blending machine learning, hyperspectral processing
+          research, and low-latency digital hardware design with a business-minded, entrepreneurial
+          approach to engineering.
         </p>
         <p>
           Leveraging my background in engineering and experience working as an AI Intern at a renowned chatbot company, my approach brings a unique perspective that prioritizes clarity.

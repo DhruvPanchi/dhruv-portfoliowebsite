@@ -15,6 +15,7 @@ import Onshape from "./images/Skills/onshape.png";
 import ESP32 from "./images/Skills/esp32.png";
 import Modtran from "./images/Skills/modtran.png";
 import Anthropic from "./images/Skills/anthopic.png";
+import Verilog from "./images/Skills/verilog.svg";
 
 export {
   logo,
@@ -30,4 +31,5 @@ export {
   ESP32,
   Modtran,
   Anthropic,
+  Verilog,
 };
