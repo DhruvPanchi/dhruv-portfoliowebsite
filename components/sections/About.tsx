@@ -113,7 +113,7 @@ const About = () => {
               <br />
               <br />
               Electrical engineering student at{" "}
-              <span className="text-textGreen">UC Irvine (Class of 2029)</span>, aspiring to
+              <span className="text-textGreen">UC Irvine (Class of 2028)</span>, aspiring to
               combine engineering technicality and business-side entrepreneurship. I specialize
               in{" "}
               <span className="text-textGreen">
